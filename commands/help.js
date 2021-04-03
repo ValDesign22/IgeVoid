@@ -12,7 +12,7 @@ exports.run = (client, message, args, dbPrefixs, dbTickets, prefix) => {
         .setDescription(`Mon prefix sur le serveur est: \`${prefix}\`\nCommandes: \`${commands}\`\nPour voir l'aide d'une commande:\n\`${prefix}help <commande>\`\n\u200b`)
         .addField("Utils (4)", "`help`, `serverinfos`, `userinfos`, `invites`")
         .addField("Music (12)", "`clear-queue`, `loop`, `nowplaying`, `pause`, `play`, `queue`, `resume`, `search`, `shuffle`, `skip`, `stop`, `volume`")
-        .addField("Moderation (15)", "`ban`, `kick`, `warn`, `role`, `channel`, `clear`, `ticket`, `setprefix`, `setwelcome`, `setgoodbye`, `unsetwelcome`, `unsetgoodbye`, `member-counter`, `warns`, `mp`")
+        .addField("Moderation (17)", "`ban`, `kick`, `warn`, `role`, `channel`, `clear`, `ticket`, `setprefix`, `setwelcome`, `setgoodbye`, `unsetwelcome`, `unsetgoodbye`, `member-counter`, `warns`, `mp`, `lock`, `unlock`")
         .addField("Niveau (4)", "`rank`, `levels`, `messages`, `leveling`")
         .addField("Fun (2)", "`embed`, `webhook`")
         .addField("Giveaway (3)", "`reroll`, `end`, `start`")
@@ -407,11 +407,27 @@ exports.run = (client, message, args, dbPrefixs, dbTickets, prefix) => {
     
         message.channel.send(e)
     }
-    else if (args[0] === "mp") {
+    else if (args[0] === "vote") {
         const e = new D.MessageEmbed()
         .setTitle(`Commande ${args[0]}`)
         .setColor("#2F3136")
-        .setDescription(`Permet d'avoir les liens pour voter pour le .\nUsage: \`${prefix}vote\``)
+        .setDescription(`Permet d'avoir les liens pour voter pour le bot.\nUsage: \`${prefix}vote\``)
+    
+        message.channel.send(e)
+    }
+    else if (args[0] === "lock") {
+        const e = new D.MessageEmbed()
+        .setTitle(`Commande ${args[0]}`)
+        .setColor("#2F3136")
+        .setDescription(`Permet de bloquer le channel d'où à été envoyé le message.\nUsage: \`${prefix}lock\``)
+    
+        message.channel.send(e)
+    }
+    else if (args[0] === "unlock") {
+        const e = new D.MessageEmbed()
+        .setTitle(`Commande ${args[0]}`)
+        .setColor("#2F3136")
+        .setDescription(`Permet de débloquer le channel d'où à été envoyé le message.\nUsage: \`${prefix}unlock\``)
     
         message.channel.send(e)
     }
