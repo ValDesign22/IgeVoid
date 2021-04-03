@@ -1,3 +1,3 @@
 # MultiBot
 
-##Bot Multifonctions opensource créé par ValRedstone.
+## Bot Multifonctions opensource créé par ValRedstone.
