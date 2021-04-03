@@ -10,7 +10,7 @@ exports.run = (client, message, args, dbPrefixs, dbTickets, prefix) => {
         .setTitle(`Commandes de ${client.user.tag}`)
         .setColor("#2F3136")
         .setDescription(`Mon prefix sur le serveur est: \`${prefix}\`\nCommandes: \`${commands}\`\nPour voir l'aide d'une commande:\n\`${prefix}help <commande>\`\n\u200b`)
-        .addField("Utils (4)", "`help`, `serverinfos`, `userinfos`, `invites`")
+        .addField("Utils (5)", "`help`, `serverinfos`, `userinfos`, `invites`, `avatar`")
         .addField("Music (12)", "`clear-queue`, `loop`, `nowplaying`, `pause`, `play`, `queue`, `resume`, `search`, `shuffle`, `skip`, `stop`, `volume`")
         .addField("Moderation (17)", "`ban`, `kick`, `warn`, `role`, `channel`, `clear`, `ticket`, `setprefix`, `setwelcome`, `setgoodbye`, `unsetwelcome`, `unsetgoodbye`, `member-counter`, `warns`, `mp`, `lock`, `unlock`")
         .addField("Niveau (4)", "`rank`, `levels`, `messages`, `leveling`")
@@ -428,6 +428,14 @@ exports.run = (client, message, args, dbPrefixs, dbTickets, prefix) => {
         .setTitle(`Commande ${args[0]}`)
         .setColor("#2F3136")
         .setDescription(`Permet de débloquer le channel d'où à été envoyé le message.\nUsage: \`${prefix}unlock\``)
+    
+        message.channel.send(e)
+    }
+    else if (args[0] === "avatar") {
+        const e = new D.MessageEmbed()
+        .setTitle(`Commande ${args[0]}`)
+        .setColor("#2F3136")
+        .setDescription(`Permet d'avoir votre avatar ou celui des personnes mentionnées.\nUsage: \`${prefix}avatar (@mention)\``)
     
         message.channel.send(e)
     }
