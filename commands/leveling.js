@@ -1,7 +1,7 @@
 const { MessageEmbed } = require("discord.js")
 
 exports.run = async (client, message, args, dbPrefixs, dbTickets, prefix, dbWelcome, dbGoodbye, dbRank) => {
-    if (message.member.hasPermission("MANAGE_SERVER") || message.author.id === "650664078649458699") {
+    if (message.member.hasPermission("MANAGE_SERVER")) {
     	if (!args[0]) {
         	const e = new MessageEmbed()
         	.setTitle("Erreur de syntaxe")
@@ -11,24 +11,44 @@ exports.run = async (client, message, args, dbPrefixs, dbTickets, prefix, dbWelc
         	message.channel.send(e)
     	}
     	else if (args[0] === "active") {
-        	dbRank.set(`lvl_${message.guild.id}`, "on")
+            if (dbRank.get(`lvl_${message.guild.id}`) !== "on") {
+                dbRank.set(`lvl_${message.guild.id}`, "on")
 
-        	const e = new MessageEmbed()
-        	.setTitle("Réussite")
-        	.setColor("GREEN")
-        	.setDescription(`Le système de niveau sur le serveur à été activé.`)
+        		const e = new MessageEmbed()
+        		.setTitle("Réussite")
+        		.setColor("GREEN")
+        		.setDescription(`Le système de niveau sur le serveur à été activé.`)
 
-        	message.channel.send(e)
+        		message.channel.send(e)
+            }
+            else {
+                const e = new MessageEmbed()
+        		.setTitle("Erreur")
+        		.setColor("RED")
+        		.setDescription(`Le système de niveau sur le serveur est déjà activé.`)
+
+        		message.channel.send(e)
+            }
     	}
     	else if (args[0] === "desactive") {
-        	dbRank.set(`lvl_${message.guild.id}`, "off")
+            if (dbRank.get(`lvl_${message.guild.id}`) !== "off") {
+                dbRank.set(`lvl_${message.guild.id}`, "off")
 
-        	const e = new MessageEmbed()
-        	.setTitle("Réussite")
-        	.setColor("GREEN")
-        	.setDescription(`Le système de niveau sur le serveur à été désactivé.`)
+        		const e = new MessageEmbed()
+        		.setTitle("Réussite")
+        		.setColor("GREEN")
+        		.setDescription(`Le système de niveau sur le serveur à été désactivé.`)
 
-        	message.channel.send(e)
+        		message.channel.send(e)
+            }
+            else {
+                const e = new MessageEmbed()
+        		.setTitle("Erreur")
+        		.setColor("RED")
+        		.setDescription(`Le système de niveau sur le serveur est déjà désactivé.`)
+
+        		message.channel.send(e)
+            }
     	}
     	else if (args[0]) {
         	const e = new MessageEmbed()
