@@ -7,5 +7,7 @@
     "removeChannel": "Your Bot Guilds Remove Logs Channel ID",
     
     "everyoneMention": false,
-    "hostedBy": true
+    "hostedBy": true,
+    
+    "port": "Your Server Port"
 }
