@@ -8,11 +8,11 @@
 
     "commands" : {
         "utils": [{
-		  "name": "help",
-          "category": "utils",
-          "description": "Get the command list",
-          "permissions": ["NONE"],
-          "usage": "prefixhelp <cmd>"
-		}]
+        	"name": "help",
+        	"category": "utils",
+        	"description": "Get the command list",
+        	"permissions": ["NONE"],
+        	"usage": "prefixhelp <cmd>"
+	}]
       }
 }
