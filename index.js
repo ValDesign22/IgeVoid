@@ -95,7 +95,7 @@ client.login(configs.token);
 
 /* Express */
 
-const webhook = new Webhook("multibotvalredstone");
+const webhook = new Webhook("VOTRE MOT DE PASSE DE WEBHOOK TOP.GG");
 const hook = new WebhookClient(`${configs.voteHookID}`, `${configs.voteHookToken}`);
 
 const app = express();
