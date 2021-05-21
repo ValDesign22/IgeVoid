@@ -1,0 +1,19 @@
+{
+    "token": "LE TOKEN DE VOTRE BOT",
+    "prefix": "LE PREFIX DE VOTRE BOT",
+
+    "support": "LE SUPPORT DE VOTRE BOT",
+
+    "bugsChannel": "L'ID DU SALON OU VONT ÊTRE REPORT LES BUGS",
+    "addChannel": "L'ID DU SALON QUI VA LOG LES ENTREE DU BOT SUR UN SERVEUR",
+    "removeChannel": "L'ID DU SALON QUI VA LOG LES SORTIE DU BOT DES SERVEUR",
+    
+    "ownerID": "L'ID DU PROPRIETAIRE DU BOT",
+    
+    "everyoneMention": false,
+    "hostedBy": true,
+
+    "topggToken": "LE TOKEN TOP.GG",
+    "voteHookID": "L'ID DU WEBHOOK DE VOTE SUR VOTRE SERVEUR",
+    "voteHookToken": "LE TOKEN DU WEBHOOK DE VOTE SUR VOTRE SERVEUR"
+}
