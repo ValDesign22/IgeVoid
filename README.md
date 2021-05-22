@@ -24,6 +24,8 @@ Pour installer le code sur votre pc vous devez d'abord télécharger le code dep
 
 ### Configuration:
 
+Pour commencer allez dans le fichier [`configs.json`](https://github.com/ValRedstone/MultiBot/blob/main/settings/configs.json) et remplissez le avec ce que vous devez remplir.
+
 ### Modules:
 
 Une fois cela fait rendez vous dans la console et tapez ceci.
