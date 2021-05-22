@@ -1,12 +1,21 @@
 # MultiBot
 
 ## Sommaire:
+- [Liens](https://github.com/ValRedstone/MultiBot/blob/main/README.md#liens)
+  - [Site](http://beta.projectheberg.fr:20251)
+  - [Widgets](https://github.com/ValRedstone/MultiBot/blob/main/README.md#widgets)
+
 - [Installation](https://github.com/ValRedstone/MultiBot/blob/main/README.md#installation)
   - [Configuration](https://github.com/ValRedstone/MultiBot/blob/main/README.md#configuration)
   - [Modules](https://github.com/ValRedstone/MultiBot/blob/main/README.md#modules)
   - [Lancement](https://github.com/ValRedstone/MultiBot/blob/main/README.md#lancement)
 
 ## Bot Multifonctions opensource créé par ValRedstone.
+
+##Liens
+
+
+### Widgets
 
 [![](https://top.gg/api/widget/status/804289381141446666.svg)](https://top.gg/bot/804289381141446666)
 [![](https://top.gg/api/widget/servers/804289381141446666.svg)](https://top.gg/bot/804289381141446666)
