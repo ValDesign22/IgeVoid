@@ -3,7 +3,7 @@
 ## Sommaire:
 - [Liens](https://github.com/ValRedstone/MultiBot/blob/main/README.md#liens)
   - [Site](http://beta.projectheberg.fr:20251)
-  - [Top.gg](https://top.gg/)
+  - [Top.gg](https://top.gg/bot/804289381141446666)
   - [Widgets](https://github.com/ValRedstone/MultiBot/blob/main/README.md#widgets)
 
 - [Installation](https://github.com/ValRedstone/MultiBot/blob/main/README.md#installation)
@@ -13,8 +13,10 @@
 
 ## Bot Multifonctions opensource créé par ValRedstone.
 
-## Liens
+### Liens
 
+  - [Site](http://beta.projectheberg.fr:20251)
+  - [Top.gg](https://top.gg/bot/804289381141446666)
 
 ### Widgets
 
