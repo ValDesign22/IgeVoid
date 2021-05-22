@@ -2,8 +2,6 @@
 
 ## Sommaire:
 - [Liens](https://github.com/ValRedstone/MultiBot/blob/main/README.md#liens)
-  - [Site](http://beta.projectheberg.fr:20251)
-  - [Top.gg](https://top.gg/bot/804289381141446666)
   - [Widgets](https://github.com/ValRedstone/MultiBot/blob/main/README.md#widgets)
 
 - [Installation](https://github.com/ValRedstone/MultiBot/blob/main/README.md#installation)
@@ -17,6 +15,8 @@
 
   - [Site](http://beta.projectheberg.fr:20251)
   - [Top.gg](https://top.gg/bot/804289381141446666)
+  - [Invitation](https://discord.com/api/oauth2/authorize?client_id=804289381141446666&permissions=8&scope=bot)
+  - [Support](https://discord.gg/nDKqMN6cG8)
 
 ### Widgets
 
