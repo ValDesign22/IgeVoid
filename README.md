@@ -3,6 +3,8 @@
 ## Sommaire:
 - [Installation](https://github.com/ValRedstone/MultiBot/blob/main/README.md#installation)
   - [Configuration](https://github.com/ValRedstone/MultiBot/blob/main/README.md#configuration)
+  - [Modules](https://github.com/ValRedstone/MultiBot/blob/main/README.md#modules)
+  - [Lancement](https://github.com/ValRedstone/MultiBot/blob/main/README.md#lancement)
 
 ## Bot Multifonctions opensource créé par ValRedstone.
 
@@ -25,6 +27,28 @@ Pour installer le code sur votre pc vous devez d'abord télécharger le code dep
 ### Configuration:
 
 Pour commencer allez dans le fichier [`configs.json`](https://github.com/ValRedstone/MultiBot/blob/main/settings/configs.json) et remplissez le avec ce que vous devez remplir.
+
+```js
+{
+    "token": "LE TOKEN DE VOTRE BOT", //mettez le token de votre bot
+    "prefix": "LE PREFIX DE VOTRE BOT", //mettez le prefix de votre bot
+
+    "support": "LE SUPPORT DE VOTRE BOT", //mettez le lien d'invitation du support de votre bot
+
+    "bugsChannel": "L'ID DU SALON OU VONT ÊTRE REPORT LES BUGS", //mettez l'ID du channel où vont être report les bugs du bot
+    "addChannel": "L'ID DU SALON QUI VA LOG LES ENTREE DU BOT SUR UN SERVEUR", //mettez l'ID du channel ou le message du bot va être envoyé quand il rejoint un serveur
+    "removeChannel": "L'ID DU SALON QUI VA LOG LES SORTIE DU BOT DES SERVEUR", //mettez l'ID du channel ou le message du bot va être envoyé quand il quitte un serveur
+    
+    "ownerID": "L'ID DU PROPRIETAIRE DU BOT", //mettez votre ID
+    
+    "everyoneMention": false, //true pour activer la mention everyone, false pour désactiver la mention everyone
+    "hostedBy": true, //true pour dire qui offre le lot, false pour ne pas dire qui offre le lot
+
+    "topggToken": "LE TOKEN TOP.GG", //le token top.gg que vou pouvez trouver dans les configurations de votre robot
+    "voteHookID": "L'ID DU WEBHOOK DE VOTE SUR VOTRE SERVEUR", //l'ID du webhook de vote sur votre discord
+    "voteHookToken": "LE TOKEN DU WEBHOOK DE VOTE SUR VOTRE SERVEUR" //le toekn de webhook de vote sur votre discord
+}
+```
 
 ### Modules:
 
