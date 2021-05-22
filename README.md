@@ -2,6 +2,7 @@
 
 ## Sommaire:
 - [Installation](https://github.com/ValRedstone/MultiBot/blob/main/README.md#installation)
+  - [Configuration](https://github.com/ValRedstone/MultiBot/blob/main/README.md#configuration)
 
 ## Bot Multifonctions opensource créé par ValRedstone.
 
@@ -20,6 +21,8 @@
   - Un éditeur de texte
 
 Pour installer le code sur votre pc vous devez d'abord télécharger le code depuis le github.
+
+### Configuration:
 
 Une fois cela fait rendez vous dans la console et tapez ceci.
 
