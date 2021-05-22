@@ -12,7 +12,7 @@
 
 [![](https://top.gg/api/widget/804289381141446666.svg)](https://top.gg/bot/804289381141446666)
 
-### Installation:
+## Installation:
 
   Logiciel nécessaires:
   - Node.js
@@ -24,11 +24,16 @@ Pour installer le code sur votre pc vous devez d'abord télécharger le code dep
 
 ### Configuration:
 
+### Modules:
+
 Une fois cela fait rendez vous dans la console et tapez ceci.
 
 ```md
 npm i
 ```
+
+### Lancement:
+
 Quand l'installation des modules est finie tapez ceci dans la console.
 
 ```md
