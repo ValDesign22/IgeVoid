@@ -18,6 +18,7 @@ const emotes = require("./utils/emojis.json");
 const colors = require("./utils/colors.json");
 const db = new Database("database/db.json");
 const ranks = new Database("database/ranks.json");
+const logs = new Database("database/logs.json");
 
 client.player = new Player(client);
 client.configs = configs;
@@ -25,6 +26,7 @@ client.emotes = emotes;
 client.colors = colors;
 client.db = db;
 client.ranks = ranks;
+client.logs = logs;
 
 /* Giveaways */
 
