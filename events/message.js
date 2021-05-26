@@ -1,7 +1,5 @@
-const { MessageEmbed, MessageAttachment } = require("discord.js");
+const { MessageEmbed, MessageAttachment, Collection } = require("discord.js");
 const { Rank } = require("canvacord");
-
-const cooldown = new Set();
 
 module.exports = async (client, message) => {
     if (message.author.bot) return;
@@ -93,33 +91,37 @@ module.exports = async (client, message) => {
     
     const cmd = client.commands.get(command) || client.aliases.get(command);
 
-    if (cooldown.has(message.author.id)) {
+    if (!client.cooldowns.has(cmd.help.name)) {
+        client.cooldowns.set(cmd.help.name, new Collection())
+    }
+
+    const tNow = Date.now();
+    const tStamps = client.cooldowns.get(cmd.help.name);
+    const cdAmount = (cmd.help.cooldown || 3) * 1000;
+
+    if (tStamps.has(message.author.id)) {
+        const cdExpTime = tStamps.get(message.author.id) + cdAmount;
+
+        if (tNow < cdExpTime) {
+            tLeft = (cdExpTime - tNow) / 1000;
+            return message.reply(`Attends encore ${tLeft.toFixed(0)} secondes avant de réutiliser la commande \`${command}\`.`)
+        }
+    }
+
+    tStamps.set(message.author.id, tNow);
+    setTimeout(() => { tStamps.delete(message.author.id) }, cdAmount);
+
+    //If the bot doesn't have the command
+    if (!cmd) {
         const e = new MessageEmbed()
         .setTitle(`${client.emotes.error} Erreur`)
         .setColor(client.colors.red)
-        .setDescription(`Merci d'attendre 3 secondes avant d'executer une nouvelle commande.`)
-        
+        .setDescription(`Je ne possède pas la commande \`${command}\`, merci de regarder le \`${prefix}help\` correctement pour pouvoir utiliser la commande demandée.`)
+
         message.channel.send(e)
     }
     else {
-        //If the bot doesn't have the command
-        if (!cmd) {
-            const e = new MessageEmbed()
-            .setTitle(`${client.emotes.error} Erreur`)
-            .setColor(client.colors.red)
-            .setDescription(`Je ne possède pas la commande \`${command}\`, merci de regarder le \`${prefix}help\` correctement pour pouvoir utiliser la commande demandée.`)
-        
-            message.channel.send(e)
-        }
-        else {
-            //Run the command
-            cmd.run(client, message, args, prefix);
-        }
-        
-        cooldown.add(message.author.id)
-        
-        setTimeout(() => {
-            cooldown.delete(message.author.id)
-        }, (1000 * 3))
+        //Run the command
+        cmd.run(client, message, args, prefix);
     }
 }
