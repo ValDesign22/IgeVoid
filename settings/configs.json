@@ -7,6 +7,7 @@
     "bugsChannel": "L'ID DU SALON OU VONT ÊTRE REPORT LES BUGS",
     "addChannel": "L'ID DU SALON QUI VA LOG LES ENTREE DU BOT SUR UN SERVEUR",
     "removeChannel": "L'ID DU SALON QUI VA LOG LES SORTIE DU BOT DES SERVEUR",
+    "logsChannel": "L'ID DU SALON DES LOGS DU BOT",
     
     "ownerID": "L'ID DU PROPRIETAIRE DU BOT",
     
