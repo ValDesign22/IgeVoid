@@ -69,9 +69,7 @@ for (const file of player) {
     client.player.on(file.split(".")[0], event.bind(null, client));
 };
 
-client.commands = new Collection();
-client.aliases = new Collection();
-client.categories = new Collection();
+["commands", "aliases", "categories", "cooldowns"].forEach(x => { client[x] = new Collection() });
 
 readdir("./commands/", (_err, files) => {
     files.forEach((file) => {
