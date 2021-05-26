@@ -88,6 +88,8 @@ module.exports = async (client, message) => {
 
     const args = message.content.slice(prefix.length).trim().split(/ +/g);
     const command = args.shift().toLowerCase();
+
+    if (!command) return;
     
     const cmd = client.commands.get(command) || client.aliases.get(command);
 
