@@ -50,6 +50,7 @@ Pour commencer allez dans le fichier [`configs.json`](https://github.com/ValReds
     "bugsChannel": "L'ID DU SALON OU VONT ÊTRE REPORT LES BUGS", //mettez l'ID du channel où vont être report les bugs du bot
     "addChannel": "L'ID DU SALON QUI VA LOG LES ENTREE DU BOT SUR UN SERVEUR", //mettez l'ID du channel ou le message du bot va être envoyé quand il rejoint un serveur
     "removeChannel": "L'ID DU SALON QUI VA LOG LES SORTIE DU BOT DES SERVEUR", //mettez l'ID du channel ou le message du bot va être envoyé quand il quitte un serveur
+    "logsChannel": "L'ID DU SALON DES LOGS DU BOT", //mettez l'ID du channel ou le bot va vous envoyer les erreurs
     
     "ownerID": "L'ID DU PROPRIETAIRE DU BOT", //mettez votre ID
     
