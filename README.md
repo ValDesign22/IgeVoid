@@ -1,5 +1,7 @@
 # MultiBot
 
+# Avant de lire ou télécharger le github de MultiBot merci de vous rendre vers la [licence](https://github.com/ValRedstone/MultiBot/blob/main/LICENCE)
+
 ## Sommaire:
 - [Liens](https://github.com/ValRedstone/MultiBot/blob/main/README.md#liens)
   - [Widgets](https://github.com/ValRedstone/MultiBot/blob/main/README.md#widgets)
