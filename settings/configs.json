@@ -16,5 +16,14 @@
 
     "topggToken": "LE TOKEN TOP.GG",
     "voteHookID": "L'ID DU WEBHOOK DE VOTE SUR VOTRE SERVEUR",
-    "voteHookToken": "LE TOKEN DU WEBHOOK DE VOTE SUR VOTRE SERVEUR"
+    "voteHookToken": "LE TOKEN DU WEBHOOK DE VOTE SUR VOTRE SERVEUR",
+
+    "dashboard": {
+        "url": "L'URL DE VOTRE SITE",
+        "port": LE_PORT_DE_VOTRE_SITE,
+        "secret": "LE CLIENT SECRET DE VOTRE BOT"
+    },
+
+    "enabled": true,
+    "autoRedirect": false
 }
