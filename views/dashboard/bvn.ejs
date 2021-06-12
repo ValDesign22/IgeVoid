@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--Meta Tags-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">        
+        <link rel="stylesheet" href="/index.css">
+        
+        <link rel="icon" href="<%= bot.avatar %>" />
+        
+        <title><%= bot.name %> | <%= server.name %></title>
+        
+        <meta property="og:type" content="website">
+		<meta property="og:site_name" content="MultiBot Website">
+		<meta property="og:title" content="MultiBot">
+		<meta property="og:description" content="Site du bot multifonctions MultiBot">
+		<meta property="og:image" content="https://cdn.discordapp.com/avatars/804289381141446666/d319f0dd0b98a890c76cd1b380a05404.png">
+		<meta name="twitter:card" content="summary_large_image">
+    </head>
+    <body>
+        <% if (alert) { %>
+            <div class="alert alert-success" role="alert">
+                <%= alert %>
+            </div>
+        <% } %>
+
+        <!--HEADER-->
+        <%- include('../header'); -%>
+        
+        <!--MAIN BODY-->
+        <div class="d-flex justify-content-center head">
+            <h1><b>MultiBot, bot multifonctions pour votre serveur.</b></h1>
+        </div>
+
+        <div style="text-align: center; margin-top: 120px;">
+            <img src="<%= server.iconURL() %>" style="border-top-left-radius: 50% 50%; border-top-right-radius: 50% 50%; border-bottom-right-radius: 50% 50%; border-bottom-left-radius: 50% 50%;">
+            <h2><%= server.name %></h2>
+        </div>
+
+        <div style="margin-bottom: 5px; text-align: center; margin-top: 50px;">
+            <a href="/guilds/<%= server.id %>/prefix"><button class="btn btn-outline-success">Prefix</button></a>
+        </div>
+        <div style="margin-bottom: 5px; text-align: center;">
+            <a href="/guilds/<%= server.id %>/bvn"><button class="btn btn-outline-success">Système de bienvenue</button></a>
+        </div>
+        <div style="margin-bottom: 10px; text-align: center;">
+            <a href="/guilds/<%= server.id %>/gb"><button class="btn btn-outline-success">Système d'aurevoir</button></a>
+        </div>
+        
+        <div style="margin-bottom: 60px;">
+            <div class="bvn" style="text-align: center; margin-top: 30px;">
+                <form method="POST">
+                    <h3>Système de bienvenue</h3>
+                        <h5>Channel</h5>
+                        <label for="bvn">
+                            <select size="<%= server.channels.size %>">
+                                <% server.channels.cache.map(channel => {
+                                    if (channel.type !== "text") return;
+                                %>
+                                    <option><%= channel.name %></option>
+                                <% }) %>
+                            </select>
+                        </label>
+                        
+                        <div style="text-align:center; margin-top: 20px;">
+                            <button type="submit" class="btn btn-outline-success">Changer</button>
+                        </div>
+                </form>
+            </div>
+            <div class="bvn" style="text-align: center; margin-top: 30px;">
+                <form method="POST">
+                        <div style="margin-top: 20px;">
+                            <h5>Message</h5>
+                            <p><code>{membre}</code>: pour la mention du membre.</p>
+                            <p><code>{membreTag}</code>: pour l'affichage du nom du membre + son tag.</p>
+                            <p><code>{membreName}</code>: pour le nom du nombre.</p>
+                            <p><code>{serveur}</code>: pour le nom du serveur.</p>
+                            <p><code>{memberCount}</code>: pour le nombre de membres sans compter les bots.</p>
+                            <p><code>{totalMemberCount}</code>: pour le nombre total de membres.</p>
+                            <br>
+                            <label for="bvnM">
+                                <input type="text" class="form-control" name="bvnM" value="<%= clien.db.has(`wMsg_${server.id}`) ? clien.db.get(`wMsg_${server.id}`) : null %>" placeholder="Message De Bienvenue">
+                            </label>
+                        </div>
+
+                        <div style="text-align:center; margin-top: 20px;">
+                            <button type="submit" class="btn btn-outline-success">Changer</button>
+                        </div>
+                </form>
+            </div>
+        </div>
+
+       <!--JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    </body>
+</html>

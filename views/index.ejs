@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--Meta Tags-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">        
+        <link rel="stylesheet" href="/index.css">
+        
+        <link rel="icon" href="<%= bot.avatar %>" />
+        
+        <title><%= bot.name %></title>
+        
+        <meta property="og:type" content="website">
+		<meta property="og:site_name" content="MultiBot Website">
+		<meta property="og:title" content="MultiBot">
+		<meta property="og:description" content="Site du bot multifonctions MultiBot">
+		<meta property="og:image" content="https://cdn.discordapp.com/avatars/804289381141446666/d319f0dd0b98a890c76cd1b380a05404.png">
+		<meta name="twitter:card" content="summary_large_image">
+    </head>
+    <body>
+        <!--HEADER-->
+        <%- include('header'); -%>
+        
+        <!--MAIN BODY-->
+        <div style="text-align: center; margin-top: 50px;">
+            <img src="<%= bot.avatar %>" style="width: 250px; height: 250px; border-top-left-radius: 50% 50%; border-top-right-radius: 50% 50%; border-bottom-right-radius: 50% 50%; border-bottom-left-radius: 50% 50%;">
+        </div>
+        <div class="d-flex justify-content-center head">
+            <h1><b>MultiBot, bot multifonctions pour votre serveur.</b></h1>
+        </div>
+        <div class="d-flex justify-content-center subtext">
+            <p>C'est un bot multifonctions qui a des changements casiment tous les jours, allumé 24/7.</p>
+        </div>
+
+        <div class="container custom-1">
+            <img class="custom-image" src="https://cdn.discordapp.com/attachments/820274871195795511/825714251951505439/unknown.png" draggable="false">
+            <h3 class="align-self-start"><b>Message de bienvenue automatique</b></h3>
+            <p>
+                Message de bienvenue automatique avec channel customisable.
+            </p>
+        </div>
+
+        <div class="container pt-10 custom-2">
+            <img src="https://cdn.discordapp.com/attachments/825715211596070922/825715662852456458/unknown.png" draggable="false">
+            <h3><b>Capable de jouer de la musique.</b></h3>
+            <p>
+                Il est possible de faire jouer de la musique à MultiBot juste en lui donnant le non de la musique, vous pouvez mettre la musique en pause, savoir les infos de la musique en cours, et plein d'autres fonctionnalitées.
+            </p>
+        </div>
+
+        <div class="container custom-1 pt-16">
+            <img class="custom-image" src="https://cdn.discordapp.com/attachments/825715211596070922/825718377204678716/unknown.png" draggable="false">
+            <h3 class="align-self-start"><b>Facile à modérer.</b></h3>
+            <p>
+                Vous pouvez expulser, bannir, avertir des personne sur votre serveur.
+            </p>
+        </div>
+
+        <div class="container pt-10 custom-2">
+            <img src="https://cdn.discordapp.com/attachments/825715211596070922/825719906569814016/unknown.png" draggable="false">
+            <h3><b>Système de ticket</b></h3>
+            <p>
+                Il y a aussi un système de ticket à réaction complet pour votre serveur.
+            </p>
+        </div>
+
+        <div class="container custom-1 pt-16">
+            <img src="https://cdn.discordapp.com/attachments/845603259266891806/849931185609244672/projectheberg.png" draggable="false" style="width: 250px; height: 250px; border-top-left-radius: 50% 50%; border-top-right-radius: 50% 50%; border-bottom-right-radius: 50% 50%; border-bottom-left-radius: 50% 50%;">
+            <h3><b>Merci à ProjectHeberg</b></h3>
+            <p>
+                Graçe à ProjectHeberg <%= bot.name %> est içi avec nous ainsi que son dashboard
+            </p>
+        </div>
+
+       <!--JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    </body>
+</html>
