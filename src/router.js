@@ -7,7 +7,7 @@ const { Webhook } = require("@top-gg/sdk");
 const { WebhookClient, Collection } = require("discord.js");
 const ms = require("ms");
 
-const webhook = new Webhook("multibotvalredstone");
+const webhook = new Webhook("YOUR TOP.GG WEBHOOK PASSWORD");
 
 class Dashboard {
     constructor(client) {
