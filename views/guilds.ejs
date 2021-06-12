@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--Meta Tags-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">        
+        <link rel="stylesheet" href="/index.css">
+        
+        <link rel="icon" href="<%= bot.avatar %>" />
+        
+        <title><%= bot.name %> | Serveurs</title>
+        
+        <meta property="og:type" content="website">
+		<meta property="og:site_name" content="MultiBot Website">
+		<meta property="og:title" content="MultiBot">
+		<meta property="og:description" content="Site du bot multifonctions MultiBot">
+		<meta property="og:image" content="https://cdn.discordapp.com/avatars/804289381141446666/d319f0dd0b98a890c76cd1b380a05404.png">
+		<meta name="twitter:card" content="summary_large_image">
+    </head>
+    <body>
+    <%- include('header'); -%>
+    
+    <div class="d-flex justify-content-center head">
+            <h1><b>MultiBot, bot multifonctions pour votre serveur.</b></h1>
+        </div>
+        <div class="d-flex justify-content-center subtext">
+            <p>C'est un bot multifonctions qui a des changements casiment tous les jours, allumé 24/7.</p>
+        </div>
+        <div style="text-align: center;">
+    
+        <% user.guilds.sort((a, b) => a.name.localeCompare(b.name)).forEach(guild => {
+            const permsOnGuild = new perms(guild.permissions);
+            if(!permsOnGuild.has("MANAGE_GUILD")) return;
+        %>
+
+            <form action="/guilds/<%= guild.id %>">
+                <button class="btn btn-outline-success" style="margin-bottom: 5px;"><img src="https://cdn.discordapp.com/icons/<%= guild.id %>/<%= guild.icon %>?size=32" style="border-top-left-radius: 50% 50%; border-top-right-radius: 50% 50%; border-bottom-right-radius: 50% 50%; border-bottom-left-radius: 50% 50%;"> <b><%= guild.name %></b></button>
+            </form>
+        <% }) %>
+        <a href="/invite"><button class="btn btn-outline-success" style="margin-bottom: 30px;"><b>+</b></button></a>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    </body>
+</html>

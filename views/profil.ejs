@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--Meta Tags-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">        
+        <link rel="stylesheet" href="/index.css">
+        
+        <link rel="icon" href="<%= bot.avatar %>" />
+        
+        <title><%= bot.name %> | <%= user.me.username %> Profil</title>
+        
+        <meta property="og:type" content="website">
+		<meta property="og:site_name" content="MultiBot Website">
+		<meta property="og:title" content="MultiBot">
+		<meta property="og:description" content="Site du bot multifonctions MultiBot">
+		<meta property="og:image" content="https://cdn.discordapp.com/avatars/804289381141446666/d319f0dd0b98a890c76cd1b380a05404.png">
+		<meta name="twitter:card" content="summary_large_image">
+    </head>
+    <body>
+        <!--HEADER-->
+        <%- include('header'); -%>
+        
+        <!--MAIN BODY-->
+        <div style="text-align: center; margin-top: 50px;">
+            <img src="https://cdn.discordapp.com/avatars/<%= user.me.id %>/<%= user.me.avatar %>" style="width: 200px; height: 200px; border-top-left-radius: 50% 50%; border-top-right-radius: 50% 50%; border-bottom-right-radius: 50% 50%; border-bottom-left-radius: 50% 50%;">
+            <h1>Profile de <%= user.me.username %>#<%= user.me.discriminator %></h1>
+        </div>
+
+        <div style="text-align: center; margin-top: 20px;">
+            <h4>Hypesquad:
+                <% if (user.me.flags === 1 << 8) { %>
+                    <img src="https://i.discord.fr/ig0.png" style="width: 20px; height: 20px;">
+                <% } else if (user.me.flags === 1 << 7) { %>
+                    <img src="https://i.discord.fr/bVC.png" style="width: 20px; height: 20px;">
+                <% } else if (user.me.flags === 1 << 6) { %>
+                    <img src="https://i.discord.fr/N5s.png" style="width: 20px; height: 20px;">
+                <% } %>
+            </h4>
+        </div>
+
+       <!--JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+        <!--Meta Tags-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">        
+        <link rel="stylesheet" href="/404.css">
+        
+        <link rel="icon" href="<%= bot.avatar %>" />
+        
+        <title><%= bot.name %> | 404</title>
+        
+        <meta property="og:type" content="website">
+		<meta property="og:site_name" content="MultiBot Website">
+		<meta property="og:title" content="MultiBot">
+		<meta property="og:description" content="Site du bot multifonctions MultiBot">
+		<meta property="og:image" content="https://cdn.discordapp.com/avatars/804289381141446666/d319f0dd0b98a890c76cd1b380a05404.png">
+		<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body>
+    <!--HEADER-->
+    <%- include('header'); -%>
+    
+    <div class="error-page">
+        <div>
+            <h1 data-h1="404">404</h1>
+            <p data-p="NOT FOUND">NOT FOUND</p>
+        </div>
+    </div>
+
+    <a href="/" class="back">GO BACK</a>
+
+    <div id="tsparticles"></div>
+
+    <!--JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    
+    <script type="text/javascript" src="../src/js/404.js"></script>
+</body>
+
+</html>
