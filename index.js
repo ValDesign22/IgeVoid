@@ -1,13 +1,9 @@
 /* Modules */
 
-const { Client, Collection, WebhookClient } = require("discord.js");
+const { Client, Collection } = require("discord.js");
 const { readdir, readdirSync } = require("fs");
 const Database = require("easy-json-database");
 const { Player } = require('discord-player');
-const { Webhook } = require("@top-gg/sdk");
-const ms = require("ms");
-const express = require("express");
-const http = require("http");
 
 /* Configs */
 
@@ -19,14 +15,18 @@ const colors = require("./utils/colors.json");
 const db = new Database("database/db.json");
 const ranks = new Database("database/ranks.json");
 const logs = new Database("database/logs.json");
+const rr = new Database("database/rr.json");
+const dashboardDB = new Database("database/dashDB.json");
 
-client.player = new Player(client);
+client.player = new Player(client, { enableLive: true });
 client.configs = configs;
 client.emotes = emotes;
 client.colors = colors;
 client.db = db;
 client.ranks = ranks;
 client.logs = logs;
+client.rr = rr;
+client.dash = dashboardDB;
 
 /* Giveaways */
 
@@ -71,7 +71,11 @@ for (const file of player) {
     client.player.on(file.split(".")[0], event.bind(null, client));
 };
 
-["commands", "aliases", "categories", "cooldowns"].forEach(x => { client[x] = new Collection() });
+// client.commands = new Collection();
+// client.aliases = new Collection();
+// client.categories = new Collection();
+
+["commands", "aliases", "categories", "cooldowns", "premium"].forEach(x => { client[x] = new Collection() });
 
 readdir("./commands/", (_err, files) => {
     files.forEach((file) => {
@@ -92,36 +96,3 @@ readdir("./commands/", (_err, files) => {
 });
 
 client.login(configs.token);
-
-/* Express */
-
-const webhook = new Webhook("VOTRE MOT DE PASSE DE WEBHOOK TOP.GG");
-const hook = new WebhookClient(`${configs.voteHookID}`, `${configs.voteHookToken}`);
-
-const app = express();
-const server = http.createServer(app);
-
-app.set('view engine', 'ejs');
-app.use(express.static("public"));
-
-app.post('/dblwebhook', webhook.middleware(), (req, res) => {
-    const user = client.users.cache.find(u => u.id === `${req.vote.user}`);
-    
-    hook.send(`${user.tag} vient juste de voter pour [MultiBot](https://top.gg/bot/804289381141446666/).\nIl a obtenu le premium pour 12h.`);
-    
-    client.db.set(`premium_${user.id}`, true);
-    
-    user.send(`Merci d'avoir voté pour moi.\nTu as obtenu le premium pour 12h, commandes débloquées: \`${configs.prefix}menu\`, \`${configs.prefix}giveaway\`.\nN'hésite pas à rejoindre le serveur support (${configs.support}) pour plus d'informations.`);
-    
-    const time = ms("12h")
-    
-    setTimeout(() => {
-        user.send(`Tu vient de perdre ton premium, si tu veux à nouveaux l'obtenir n'hésite pas à aller voter pour moi sur Top.gg`);
-        
-        client.db.set(`premium_${user.id}`, false);
-    }, time);
-})
-
-const listener = server.listen(PORT, function() { //Remplace PORT par le port de votre hébergement.
-    console.log("Dashboard en ligne sur le port " + listener.address().port);
-})
