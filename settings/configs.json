@@ -1,27 +1,27 @@
 {
-    "token": "ODI2ODAxMjE0MDcwOTgwNjI4.YGRwog.0vUGPjTAFWJZ3ZOLoLMSAJWhins",
+    "token": "",
     "prefix": "m!",
 
-    "support": "https://discord.gg/nDKqMN6cG8",
+    "support": "",
 
-    "bugsChannel": "829711109350621184",
-    "addChannel": "820305450335600700",
-    "removeChannel": "825375229735731230",
-    "logsChannel": "845603259266891806",
+    "bugsChannel": "",
+    "addChannel": "",
+    "removeChannel": "",
+    "logsChannel": "",
     
-    "ownerID": "650664078649458699",
+    "ownerID": "",
     
     "everyoneMention": false,
     "hostedBy": true,
 
-    "topggToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjgwNDI4OTM4MTE0MTQ0NjY2NiIsImJvdCI6dHJ1ZSwiaWF0IjoxNjE3NTI3NzEwfQ.JiPVgBZpWDj0C8UfkO28rgRPjBsKZ3sfPFhy_iQGZrg",
-    "voteHookID": "828299825929388063",
-    "voteHookToken": "c9E5h1BQ9lcG2EsweJijzuELOjWW3ZvuBC1i-KG-yxllgBJTQ_bPXCLlQb0WUcAN1mfh",
+    "topggToken": "",
+    "voteHookID": "",
+    "voteHookToken": "",
 
     "dashboard": {
         "url": "http://localhost",
         "port": 8000,
-        "secret": "OyY7wWxVhMmSO0qNHCe-YHBz3ndYBOK4"
+        "secret": ""
     },
 
     "enabled": true,
