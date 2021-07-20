@@ -8,7 +8,7 @@ module.exports.run = async (client, message, args) => {
         const time = ms(args[0]);
 
         if (!time || time > 1209600000) {
-            message.reply("Merci de me donner une durée de 14 maximum ou moins: `1s/m/h/d`.");
+            message.reply("Merci de me donner une durée de 14 jours maximum ou moins: `1s/m/h/d`.");
         }
         else {
             const raison = args.slice(1).join(" ")
