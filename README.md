@@ -1,23 +1,23 @@
 # IgeVoid
 
-# Avant de lire ou télécharger le github de MultiBot merci de vous rendre vers la [license](https://github.com/ValRedstone/MultiBot/blob/main/LICENSE)
+# Avant de lire ou télécharger le github de IgeVoid merci de vous rendre vers la [license](https://github.com/ValRedstone/MultiBot/blob/main/LICENSE)
 
 ## Sommaire:
-- [Liens](https://github.com/ValRedstone/MultiBot/blob/main/README.md#liens)
-  - [Widgets](https://github.com/ValRedstone/MultiBot/blob/main/README.md#widgets)
+- [Liens](https://github.com/ValRedstone/IgeVoid/blob/main/README.md#liens)
+  - [Widgets](https://github.com/ValRedstone/IgeVoid/blob/main/README.md#widgets)
 
-- [Installation](https://github.com/ValRedstone/MultiBot/blob/main/README.md#installation)
-  - [Configuration](https://github.com/ValRedstone/MultiBot/blob/main/README.md#configuration)
-  - [Modules](https://github.com/ValRedstone/MultiBot/blob/main/README.md#modules)
-  - [Lancement](https://github.com/ValRedstone/MultiBot/blob/main/README.md#lancement)
+- [Installation](https://github.com/ValRedstone/IgeVoid/blob/main/README.md#installation)
+  - [Configuration](https://github.com/ValRedstone/IgeVoid/blob/main/README.md#configuration)
+  - [Modules](https://github.com/ValRedstone/IgeVoid/blob/main/README.md#modules)
+  - [Lancement](https://github.com/ValRedstone/IgeVoid/blob/main/README.md#lancement)
 
 ## Bot Multifonctions opensource créé par ValRedstone.
 
 ### Liens
 
-  - [Site](http://beta.projectheberg.fr:20251)
+  - [Site](http://igevoid.ml)
   - [Top.gg](https://top.gg/bot/804289381141446666)
-  - [Invitation](https://discord.com/api/oauth2/authorize?client_id=804289381141446666&permissions=8&scope=bot)
+  - [Invitation](https://discord.com/api/oauth2/authorize?client_id=804289381141446666&permissions=-1&scope=bot)
   - [Support](https://discord.gg/nDKqMN6cG8)
 
 ### Widgets
