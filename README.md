@@ -1,4 +1,4 @@
-# MultiBot
+# IgeVoid
 
 # Avant de lire ou télécharger le github de MultiBot merci de vous rendre vers la [license](https://github.com/ValRedstone/MultiBot/blob/main/LICENSE)
 
