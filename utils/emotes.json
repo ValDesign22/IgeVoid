@@ -1,0 +1,31 @@
+{
+    "on": "<:on:842728998730989598>",
+    "off": "<:off:842728996277059614>",
+    "error": "<:error:842729303229595668>",
+    "yes": "<:checkmark:869873103419883553>",
+
+    "online": "<:online:828239556594630696>",
+    "dnd": "<:dnd:828239782286065704>",
+    "streaming": "<:streaming:828240613236277258>",
+    "idle": "<:idle:842730299581267999>",
+    "offline": "<:invisble:828240063938822214>",
+
+    "De": "<:discord_staff:828222621945823252>",
+    "Pso": "<:partner_server_owner:828222550147858463>",
+    "Dp": "<:partner_badge:828237300113866802>",
+    "He": "<:hypesquad:828222702447493153>",
+    "BLvl1": "<:bug_tracker:828222959512322048>",
+    "BLvl2": "<:bug_terminator:828222517520236615>",
+    "HBra": "<:house_of_bravery:828222809921683468>",
+    "HBri": "<:house_of_brillance:828222665918513193>",
+    "HBal": "<:house_of_balance:828222780083535892>",
+    "Es": "<:discord_support:828222581789556776>",
+    "Evbd": "<:certified_developper:828222921549807620>",
+    "Vd": "<:certified_developper:828222921549807620>",
+
+    "Proprio": "<:owner:828241699486040064>",
+
+    "left": "<a:blob_left:828559672298176542>",
+    "join": "<a:blob_join:828559469789184001>",
+    "gw": "<a:giveaway:828559376087253022>"
+}

@@ -1,0 +1,188 @@
+{
+    "noEmbeds": "I do not have permission to send embeds, please contact a member of the server staff so that I can have permission.",
+    
+    "error": "{errorEmote} Error",
+    "language": "Server language changed by `{lang}`.",
+    "noLang": "Please specify a new language: `{langs}`.",
+    "notVLang": "I cannot be configured on the language: `{lang}` but on one of these languages: `{langs}`.",
+    "alreadyLang": "The server language is already set to `{lang}`.",
+    "regexMention": "I am {user}\nBot prefix on this server is `{prefix}`.\nTo see the commands list use `{prefix}help`.",
+    "noCommand": "I don't own the command `{command}`, look `{prefix}help` to get all commands.",
+    "cooldown": "Please wait {tLeft} seconds before use again command `{command}`.",
+    "ownerOnly": "Only the bot owner can execute this command.",
+    "bugHunted": "Bug Found",
+    "bugError": "Thanks to give a bug not an empty message !",
+    "levelup": "Well done, you are now level {memberLevel}. You have to earn another {NextLvl} xp ({NextLvl5} messages) to move to the next level.",
+    "noPerm": "You don't have `{perm}`.",
+    "banErrorMember": "You did not give the member to be banned.",
+    "banErrorReason": "You did not give a reason for the ban.",
+    "banErrorNotBeBanned": "{member} cannot be banned.",
+    "banned": "{left} Member Banned.",
+    "memberBanned": "{member} has been banned for reason: {raison}",
+    "errorWarnMembers": "You did not give the user that need to be warned",
+    "errorWarnReason": "You did not give the reason of the warn",
+    "TitleWarnMember": "Member warned !",
+    "cantWarn": "cannot be warned",
+    "warned": "has been warned on the server for reason:",
+    "warnsKick": "was kicked from the server because it received too many warnings.",
+    "warnsMP": "You have been kicked from the server {guild} because you have received too many warnings.",
+    "noHookMember": "Please mention a member to use this command.",
+    "hookMessage": "Please send a message.",
+    "hookMention": "Please do not mention here or everyone.",
+    "ytSearch": "Here is a link to the matches for your search on youtube.",
+    "ytNoSearch": "Please give me a search to do on youtube.",
+    "notNmb": "{nmb} is not a number.",
+    "noTxt4Ebd": "Please give me a text to put in an embed.",
+    "noArgs": "Please give me a text.",
+    "nuked": "Channel reset.",
+    "noID": "Please give me use ID to send message",
+    "giveCalc": "Please give me a calculation to do.",
+    "mentionChan": "Please mention a channel.",
+    "suggSet": "The suggestion channel has been set to {channel}.",
+    "ggSearch": "Here is a link to the matches for your search on {link}.",
+    "u99": "You have to enter a number between `1` and` 99`.",
+    "restarting": "The bot is restarting.",
+    "tickets": {
+        "Title": "Ticket system control panel.",
+        "descChan": "To send the panel ticket to the given channel",
+        "descTitle": "To give a title to the ticket panel.",
+        "descDesc": "To give a description to the panel ticket.",
+        "give": "Please give me a {x} to put on the ticket.",
+        "cdown": "You have not given a {x} in the allotted time.",
+        "nop": "You did not give {x} to the ticket."
+    },
+    "prefix": {
+        "title": "Prefix change menu.",
+        "main": "⚙️ To change the prefix.\n🔁 To reset the prefix.\n❌ To cancel.",
+        "change": "Please give me a prefix to change below.",
+        "cdown": "The time is up, you can try to execute the command again in 3 seconds.",
+        "ard": "The given prefix is already defined on the current server, you can try to execute the command again in 3 seconds.",
+        "changed": "The bot prefix on the server has been changed by",
+        "tooLong": "The prefix cannot be more than 5 characters long.",
+        "reset": "The bot prefix on the server has been reset, new prefix"
+    },
+    "remind": {
+        "duration": "Please give me a duration: `1s/m/h/d`",
+        "u14": "Please give me a maximum duration of 14 days or less: `1s/m/h/d`.",
+        "reason": "Please give me an explanation of why you are calling back.",
+        "remindYes": "Perfect, I'll call you back in {t} for reason",
+        "reminded": "I called you back for reason"
+    },
+    "logs": {
+        "args": "Please specify an argument such as `set`,` active` or `desactive`.",
+        "chan": "Please mention a channel and not an empty space.",
+        "setChan": "The log channel has been set to",
+        "ardA": "The logs system is already actived.",
+        "setA": "The logs system is now actived.",
+        "ardD": "The logs system is already desactived.",
+        "setD": "The logs system is now desactived."
+    },
+    "reload": {
+        "getCommand": "Please give me a command to reload.",
+        "errorCmd": "An error occurred while reloading.",
+        "noCmd": "I don't have a named command",
+        "getEvent": "Please give me an event to reload.",
+        "errorEvt": "An error occurred while reloading the event."
+    },
+    "gw": {
+        "noID": "Please specify the id of a giveaway.",
+        "noVID": "Could not find a giveaway for",
+        "err": "An error occured...",
+        "endIn": "The giveaway will end in less than ",
+        "ardEnd": "This giveaway is already finished.",
+        "noEnd": "This giveaway is not finished.",
+        "gift": "Please specify a gift ",
+        "winners": "Please enter a valid number of winners ",
+        "duration": "Please enter a valid duration for the giveaway ",
+        "channel": "Please mention a valid channel to make a giveaway "
+    },
+    "sugg": {
+        "sent": "Your suggestion has been sent in",
+        "noChan": "The suggestion channel is not yet defined, ask the server moderators to put it with the command"
+    },
+    "docs": {
+        "doc1": "Please specify a search on the discord.js doc below.",
+        "doc2": "The cooldown has dropped to zero, please use this command again later.",
+        "doc3": "No results found on the discord.js documentation for {value}."
+    },
+    "translate": {
+        "tr1": "Please tell me what is the language of the text:",
+        "tr2": "Please tell me in which language the text should be translated:",
+        "tr3": "Please give me a text to translate:"
+    },
+    "levels": {
+        "notActivate": "The level system on the server is currently disabled.",
+        "noLvls": "{user} still hasn't sent any messages so he doesn't have any xp or levels yet.",
+        "size": "There are not enough members posting to the server (`required: 3, current:"
+    },
+    "lock": {
+        "alreadyLock": "This channel is already locked.",
+        "ardUnl": "This channel is not locked.",
+        "unlocked": "This channel is now unlocked.\nModerator: {user}.",
+        "locked": "This channel is now locked.\nModerator: {user}"
+    },
+    "ascii": {
+        "notext": "Please give me a text to transform into ascii."
+    },
+    "avatar": {
+        "avatar1": "Your avatar",
+        "avatar2": "{member}'s avatar",
+        "notValidID": "`{y}` is not a valid ID.",
+        "tooShort": "`{y}` is too short.",
+        "tooLong": "`{y}` is too long."
+    },
+    "music": {
+        "notInVoice": "You are not in a voice channel.",
+        "notBotVoice": "You are not in the same voice channel as me.",
+        "noMusic": "No music playing.",
+        "OneMusic": "There is only 1 music in the queue.",
+        "queueReset": "The queue has been reset.",
+        "giveMusic": "Please give me a song name.",
+        "shuffle": "Playlist shuffled **{length}** music(s) !",
+        "skipped": "The current music has been **skipped**.",
+        "stopped": "The guild music has been **stopped**.",
+        "npChannel": "Channel",
+        "npRequested": "Requested by",
+        "npViews": "Views",
+        "npDuration": "Duration",
+        "npVolume": "Volume",
+        "npRepeat": "In repeat",
+        "inPause": "Actually in pause",
+        "progress": "Progression bar",
+        "fromPlaylist": "From playlist",
+        "loop": {
+            "queueOn": "Repeat mode **enabled**, all queue will be repeated in a loop.",
+            "queueOff": "Repeat mode **disabled**.",
+            "on": "Repeat mode **enabled** current music will be repeated repeatedly.",
+            "off": "Repeat mode **disabled**."
+        },
+        "pause": {
+            "already": "The music is already paused.",
+            "nowPaused": "The music {title} has been paused."
+        },
+        "resume": {
+            "alreadyStart": "The music is already resumed.",
+            "resumed": "The music {title} has been resumed."
+        },
+        "volume": {
+            "notNumber": "Please give me a valid number",
+            "oneToHundred": "Please enter a number between 1 and 100.",
+            "changed": "Volume changed by **{volume}%** !"
+        }
+    },
+    "antispam": {
+        "values": "Please use one of theses values :\n{values}",
+        "new": "Stat changed by {stat}.",
+        "alreadySet": "Antispam system is already set to {stat}.",
+        "underOne": "The time cannot be less than 1 second.",
+        "same": "The time cannot be set to the same duration: {same}.",
+        "time": "Please specify a time: `1s/m`.",
+        "msgs": "Please specify a number of messages.",
+        "sameMsg": "You cannot change the number of messages to the currently set number.",
+        "newMsg": "The number of messages is now set to {msg}.",
+        "newNbr": "The time is now set to {nbr}."
+    },
+    "yes": "Yes",
+    "no": "No",
+    "success": "Success"
+}

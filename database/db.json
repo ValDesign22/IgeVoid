@@ -1,0 +1,13 @@
+{
+  "wC_820279543402987553": "826477235853852763",
+  "wMsg_820279543402987553": "Bienvenue {membreName} sur le serveur {serveur}.\nGrace à toi nous sommes maintenant {memberCount} membres sur le serveur.\nLes annonces du bot se font dans <#826697213791043604>.\nBonne séjour à toi sur {serveur}.",
+  "gC_820279543402987553": "826477299989610546",
+  "gMsg_820279543402987553": "Aurevoir {membreTag},\nDommage que tu ais quitté {serveur}.\nNous sommes maintenant {memberCount} membres sur le serveur.",
+  "wR_820279543402987553": "826697770093772830",
+  "sug_820279543402987553": "827851386326351872",
+  "gC_742001124457971765": "835104363163811880",
+  "gMsg_742001124457971765": "Leave {membreName}",
+  "wC_742001124457971765": "835104363163811880",
+  "wMsg_742001124457971765": "Welcome {membreName}",
+  "sug_858966071443849217": "859043094028484618"
+}

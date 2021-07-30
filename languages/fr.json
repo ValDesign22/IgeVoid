@@ -1,0 +1,188 @@
+{
+    "noEmbeds": "Je n'ai pas la permission d'envoyer des embeds, merci de contacter un membre du staff du serveur pour que je puisse avoir la permission.",
+
+    "error": "{errorEmote} Erreur",
+    "language": "Langue du serveur changée par `{lang}`.",
+    "noLang": "Merci de spécifier une langue: `{langs}`",
+    "notVLang": "Je ne peux pas être configuré sur la langue: `{lang}` mais sur une des langues: `{langs}`",
+    "alreadyLang": "La langue du serveur est déjà définie sur `{lang}`",
+    "regexMention": "Je suis {user}\nLe prefix du bot sur ce serveur est `{prefix}`.\nPour voir la liste des commandes fais `{prefix}help`.",
+    "noCommand": "Je ne possède pas la commande `{command}`, merci de regarder le `{prefix}help` correctement pour pouvoir utiliser la commande demandée.",
+    "cooldown": "Attends encore {tLeft} secondes avant de réutiliser la commande `{command}`.",
+    "ownerOnly": "Seul le propriétaire du bot peut éxecuter cette commande.",
+    "bugHunted": "Bug trouvé",
+    "bugError": "Merci de me donner un bug et non un message vide.",
+    "levelup": "Bravo, tu es maintenant niveau {memberLevel}. Tu dois gagner encore gagner {NextLvl}xp ({NextLvl5} messages) pour passer au niveau suivant.",
+    "noPerm": "Vous n'avez pas la permission `{perm}`",
+    "banErrorMember": "Tu n'as pas donné le membre qui doit être banni.",
+    "banErrorReason": "Tu n'as pas donné de raison pour le ban.",
+    "banErrorNotBeBanned": "{member} ne peut pas être banni.",
+    "banned": "{left} Membre Banni.",
+    "memberBanned": "{member} à été banni du serveur pour raison: {raison}",
+    "errorWarnMembers": "Merci de me donner un membre à avertir.",
+    "errorWarnReason": "Merci de me donner une raison pour l'avertissement.",
+    "TitleWarnMember": "Membre Averti !",
+    "cantWarn": "ne peut pas être averti",
+    "warned": "à été averti sur le serveur pour raison:",
+    "warnsKick": "à été expulsé du serveur car il a reçu trop d'avertissements.",
+    "warnsMP": "Tu as été expulsé du serveur {guild} car tu as reçu trop d'avertissements.",
+    "noHookMember": "Merci de mentionner un membre pour le webhook.",
+    "hookMessage": "Merci de me donner un texte pour le webhook.",
+    "hookMention": "Merci de ne pas mentionner everyone ou here.",
+    "ytSearch": "Voiçi un lien menant vers les correspondances pour votre recherche sur youtube.",
+    "ytNoSearch": "Merci de me donner une recherche à faire sur youtube.",
+    "notNmb": "{nmb} n'est un nombre.",
+    "noTxt4Ebd": "Merci de me donner un texte à mettre dans un embed.",
+    "noArgs": "Merci de donner un texte.",
+    "nuked": "Channel réinitialisé.",
+    "noID": "Merci de me donner l'ID de la personne à MP.",
+    "giveCalc": "Merci de me donner un calcul à faire.",
+    "mentionChan": "Merci de mentionner un channel.",
+    "suggSet": "Le channel de suggestion à été défini sur {channel}.",
+    "ggSearch": "Voiçi un lien menant vers les correspondances pour votre recherche sur {link}.",
+    "u99": "Tu dois entrer un nombre compris entre `1` et `99`.",
+    "restarting": "Le bot est en train de redémarrer.",
+    "tickets": {
+        "Title": "Paneau de configuration du système de ticket.",
+        "descChan": "Pour envoyer le panel ticket dans le channel donné",
+        "descTitle": "Pour donner un titre au panel ticket.",
+        "descDesc": "Pour donner une description au panel ticket.",
+        "give": "Merci de me donner un {x} à mettre au ticket.",
+        "cdown": "Vous n'avez pas donné de {x} dans le temps imparti.",
+        "nop": "Vous n'avez pas donné de {x} au ticket."
+    },
+    "prefix": {
+        "title": "Menu du changement de prefix.",
+        "main": "⚙️ Pour changer le prefix.\n🔁 Pour reset le prefix.\n❌ Pour annuler.",
+        "change": "Merci de me donner un prefix à changer ci dessous.",
+        "cdown": "Le temps est écoulé, vous pouvez réessayer d'executer la commande dans 3 secondes.",
+        "ard": "Le prefix donné est celui déjà défini sur le serveur actuelement, vous pouvez réessayer d'executer la commande dans 3 secondes.",
+        "changed": "Le prefix du bot sur le serveur a été changé par",
+        "tooLong": "Le prefix en peut pas faire plus de 5 caractères.",
+        "reset": "Le prefix du bot sur le serveur a été réinitialisé, nouveau prefix"
+    },
+    "remind": {
+        "duration": "Merci de me donner une durée: `1s/m/h/d`",
+        "u14": "Merci de me donner une durée de 14 jours maximum ou moins: `1s/m/h/d`.",
+        "reason": "Merci de me donner une explication de pourquoi vous rappeler.",
+        "remindYes": "Parfait, je vais vous rappeler dans {t} pour raison",
+        "reminded": "Je vous ai rappellé pour raison"
+    },
+    "logs": {
+        "args": "Merci de spécifier un argument tel que `set`, `active` ou `desactive`.",
+        "chan": "Merci de mentionner un channel et non un espace vide.",
+        "setChan": "Le channel de logs à été défini sur",
+        "ardA": "Le système de logs est déjà activé.",
+        "setA": "Le système de logs est maintenant activé.",
+        "ardD": "Le système de logs est déjà désactivé.",
+        "setD": "Le système de logs est maintenant désactivé."
+    },
+    "reload": {
+        "getCommand": "Merci de me donner une commande à recharger.",
+        "errorCmd": "Une erreur est survenu lors du rechargement.",
+        "noCmd": "Je ne possède pas de commande nommée",
+        "getEvent": "Merci de me donner une event à recharger.",
+        "errorEvt": "Une erreur est survenu lors du rechargement de l'event."
+    },
+    "gw": {
+        "noID": "Merci de spécifier l'id d'un giveaway.",
+        "noVID": "Impossible de trouver un giveaway pour",
+        "err": "Une erreur ç'est produite...",
+        "endIn": "Le giveaway se terminera dans moins de ",
+        "ardEnd": "Ce giveaway est déjà terminé.",
+        "noEnd": "Ce giveaway n'est pas terminé.",
+        "gift": "Merci de spécifier un cadeau ",
+        "winners": "Merci d'entrer un nombre valide de gagnants ",
+        "duration": "Merci d'entrer une durée valide pour le giveaway ",
+        "channel": "Merci de mentionner un channel valide pour faire un giveaway "
+    },
+    "sugg": {
+        "sent": "Votre suggestion à été envoyée dans",
+        "noChan": "Le channel de suggestions n'est pas encore défini, demande au modérateurs du serveur de le mettre avec la commande"
+    },
+    "docs": {
+        "doc1": "Merci de spécifier une recherche sur la doc discord.js ci dessous.",
+        "doc2": "Le cooldown est tombé à zéro, merci de réutiliser cette commande plus tard.",
+        "doc3": "Aucun résultats trouvé sur la documentation discord.js pour {value}."
+    },
+    "translate": {
+        "tr1": "Merci de me dire quelle est la langue du texte:",
+        "tr2": "Merci de me dire dans quelle langue le texte doit être traduit:",
+        "tr3": "Merci de me donner un texte à traduire:"
+    },
+    "levels": {
+        "notActivate": "Le système de niveau sur le serveur est actuellement désactivé.",
+        "noLvls": "{user} n'a toujours pas envoyé de messages donc il n'a pas encore d'xp ou de niveaux.",
+        "size": "Il n'y a pas assez de membres ayant envoyés des messages sur le serveur (`requis: 3, actuel:"
+    },
+    "lock": {
+        "alreadyLock": "Ce channel est déja bloqué.",
+        "ardUnl": "Ce channel n'est pas bloqué.",
+        "unlocked": "Le channel à été débloqué.\nModérateur: {user}.",
+        "locked": "Ce salon est actuellement bloqué.\nModérateur: {user}"
+    },
+    "ascii": {
+        "notext": "Merci de me donner un texte à transformer en ascii."
+    },
+    "avatar": {
+        "avatar1": "Ton avatar",
+        "avatar2": "L'avatar de {member}",
+        "notValidID": "`{y}` n'est pas une ID valide.",
+        "tooShort": "`{y}` n'est pas assez long pour être une ID.",
+        "tooLong": "`{y}` est trop long pour être une ID."
+    },
+    "music": {
+        "notInVoice": "Vous n'êtes pas dans un salon vocal.",
+        "notBotVoice": "Vous n'êtes pas dans le même channel vocal que moi.",
+        "noMusic": "Aucune musique en cours.",
+        "OneMusic": "Il y a seulement 1 musique dans la file d'attente.",
+        "queueReset": "La file d'attente a été réinitialisée.",
+        "giveMusic": "Veuillez indiquer le titre d'une musique.",
+        "shuffle": "File d'attente mélangée **{length}** musique(s) !",
+        "skipped": "La musique actuelle vient d'être **passée**.",
+        "stopped": "La musique du serveur vient d'être **stoppé**.",
+        "npChannel": "Chaîne",
+        "npRequested": "Demandé par",
+        "npViews": "Vues",
+        "npDuration": "Durée",
+        "npVolume": "Volume",
+        "npRepeat": "En répétition",
+        "inPause": "Actuellement en pause",
+        "progress": "Barre de progression",
+        "fromPlaylist": "De la playlist",
+        "loop": {
+            "queueOn": "Mode de répétition **activé**, toute la file d'attente sera répétée en boucle.",
+            "queueOff": "Mode de répétition **désactivé**.",
+            "on": "Mode de répétition **activé** la musique actuelle sera répétée en boucle.",
+            "off": "Mode de répétition **désactivé**."
+        },
+        "pause": {
+            "already": "La musique est déjà en pause.",
+            "nowPaused": "La musique {title} a été mise en pause."
+        },
+        "resume": {
+            "alreadyStart": "La musique est déjà en cours.",
+            "resumed": "La musique {title} a reprise."
+        },
+        "volume": {
+            "notNumber": "Merci d'entrer un nombre valide.",
+            "oneToHundred": "Merci d'entrer un chiffre compris entre 1 et 100.",
+            "changed": "Volume changé à **{volume}%** !"
+        }
+    },
+    "antispam": {
+        "values": "Merci d'utiliser les valeurs ci dessous:\n{values}",
+        "new": "Statut changé par {stat}",
+        "alreadySet": "Le système d'antispam est déjà défini sur {stat}",
+        "underOne": "Le temps ne peut pas être inférieur à 1 seconde.",
+        "same": "Le temps ne peut pas être défini sur la même duréé: {same}.",
+        "time": "Merci de spécifier un temps: `1s/m`.",
+        "msgs": "Merci de spécifier un nombre de messages.",
+        "sameMsg": "Vous ne pouvez pas changer le nombre de messages par celui actuellement défini.",
+        "newMsg": "Le nombre de messages et maintenant défini sur {msg}.",
+        "newNbr": "Le temps est maintenant défini sur {nbr}."
+    },
+    "yes": "Oui",
+    "no": "Non",
+    "success": "Succés"
+}
