@@ -1,12 +1,8 @@
 const figlet = require("figlet");
 const { Api } = require('@top-gg/sdk');
-const axios = require("axios")
-
-const Dashboard = require("../src/router");
+const axios = require("axios");
 
 module.exports = async (client) => {
-    client.dashboard = new Dashboard(client);
-
     const { user, configs, guilds, users } = client;
     const { log, dir } = console;
 
