@@ -1,0 +1,34 @@
+{
+    "token": "YOUR BOT TOKEN",
+    "prefix": "YOUR BOT PREFIX",
+
+    "support": "YOUR BOT SUPPORT LINK",
+
+    "bugsChannel": "YOUR BUGS REPORT CHANNEL ID",
+    "addChannel": "YOUR BOT LOGS ADD CHANNEL ID",
+    "removeChannel": "YOUR BOT LOGS REMOVE CHANNEL ID",
+    "logsChannel": "YOUR BOT LOGS CHANNEL ID",
+	
+    "mongoSrv": "YOUR MONGODB LINK URL",
+    
+    "ownerID": "YOUR BOT OWNER ID",
+    
+    "everyoneMention": false,
+    "hostedBy": true,
+
+    "topggToken": "YOUR TOP.GG TOKEN",
+    "dbotsToken": "YOUR DISCORD.BOTS.GG TOKEN",
+    "voteHookID": "YOUR VOTE WEBHOOK ID",
+    "voteHookToken": "YOUR VOTE WEBHOOK TOKEN",
+
+    "dashboard": {
+        "url": "YOUR WEBSITE URL",
+        "port": PORT,
+        "secret": "YOUR BOT CLIENT SECRET"
+    },
+
+    "enabled": true,
+    "autoRedirect": false,
+    
+    "premiumUsers": ["ARRAY OF PREMIUM USERS ID"]
+}
